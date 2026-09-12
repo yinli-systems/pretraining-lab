@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "collection": "Pretraining Lab",
+  "maintainer": "yinli-systems",
+  "models": [
+    {
+      "slug": "l20-edu-135m",
+      "display_name": "L20-Edu-135M",
+      "parameters": 134500000,
+      "training_tokens_approximate": 13000000000,
+      "initialization": "random",
+      "hardware": ["1x NVIDIA L20"],
+      "status": "released",
+      "model_page": "models/135m.md",
+      "github": "https://github.com/yinli-systems/l20-edu-135m-pretrain",
+      "huggingface": "https://huggingface.co/AliceYin/l20-edu-135m",
+      "primary_metric": {
+        "name": "six_task_equal_weight_macro",
+        "value": 0.415,
+        "comparable_across_collection": false
+      }
+    },
+    {
+      "slug": "l20-1b-20b-base",
+      "display_name": "L20-1B-20B-Base",
+      "parameters": 1100048384,
+      "training_prediction_tokens": 19999703040,
+      "initialization": "random",
+      "hardware": ["1x NVIDIA L20"],
+      "status": "base_released_research_active",
+      "model_page": "models/1b.md",
+      "github": null,
+      "github_visibility": "private",
+      "huggingface": "https://huggingface.co/AliceYin/L20-1B-20B-Base",
+      "primary_metric": {
+        "name": "seven_task_equal_weight_macro",
+        "value": 0.512601,
+        "comparable_across_collection": false
+      }
+    }
+  ]
+}
