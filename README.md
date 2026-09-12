@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/pretraining-lab-cover.png" width="100%" alt="Pretraining Lab — one GPU powering two auditable language-model pretraining runs">
+  <img src="assets/pretraining-lab-cover.png" width="100%" alt="Pretraining Lab — cinematic 3D visualization of one GPU powering two auditable language-model pretraining runs">
 </p>
 
 <p align="center">
