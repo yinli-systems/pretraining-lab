@@ -29,8 +29,8 @@
       "hardware": ["1x NVIDIA L20"],
       "status": "base_released_research_active",
       "model_page": "models/1b.md",
-      "github": null,
-      "github_visibility": "private",
+      "github": "https://github.com/yinli-systems/l20-1b-pretraining",
+      "github_visibility": "public",
       "huggingface": "https://huggingface.co/AliceYin/L20-1B-20B-Base",
       "primary_metric": {
         "name": "seven_task_equal_weight_macro",

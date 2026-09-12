@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/pretraining-lab.svg" width="100%" alt="Pretraining Lab — one GPU, auditable runs, honest results">
+  <img src="assets/pretraining-lab-cover.png" width="100%" alt="Pretraining Lab — one GPU powering two auditable language-model pretraining runs">
 </p>
 
 <p align="center">
@@ -20,7 +20,7 @@ discover and compare them without merging incompatible metrics.
 | Model | Parameters | Training tokens | Hardware | Public artifacts | Status |
 |---|---:|---:|---|---|---|
 | [L20-Edu-135M](models/135m.md) | 134.5M | ~13B total | 1× NVIDIA L20 | [Code](https://github.com/yinli-systems/l20-edu-135m-pretrain) · [Weights](https://huggingface.co/AliceYin/l20-edu-135m) | Released |
-| [L20-1B-20B-Base](models/1b.md) | 1.100B | 19.9997B prediction tokens | 1× NVIDIA L20 | [Weights](https://huggingface.co/AliceYin/L20-1B-20B-Base) | Base released; research active |
+| [L20-1B-20B-Base](models/1b.md) | 1.100B | 19.9997B prediction tokens | 1× NVIDIA L20 | [Code](https://github.com/yinli-systems/l20-1b-pretraining) · [Weights](https://huggingface.co/AliceYin/L20-1B-20B-Base) | Base released; research active |
 
 The headline scores are intentionally not placed in one ranking column. The
 135M release uses a six-task suite and includes an SFT interpolation, while the
@@ -47,7 +47,7 @@ hashes, metrics, protocols, and reproducible plotting code stay with each model.
 
 | Evidence class | 135M | 1.1B |
 |---|---|---|
-| From-zero initialization | Documented in public repository | Documented in model card and evidence repository |
+| From-zero initialization | Documented in public repository | Documented in public code and evidence repository |
 | Data controls | MinHash/LSH, overlap filtering, source caps | Global exact deduplication, language/content filtering, benchmark screening |
 | Evaluation | Six-task same-harness comparison | Seven-task frozen same-protocol comparison with sample-level intervals |
 | Efficiency | Single-L20 run records | 12,845 tok/s and 71.17% point MFU snapshot |
@@ -91,4 +91,3 @@ python validate_catalog.py
 
 [Yin Li](https://github.com/yinli-systems) · model releases on
 [Hugging Face](https://huggingface.co/AliceYin)
-
